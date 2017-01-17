@@ -22,3 +22,5 @@ A **commit** is a save point within Git and has four distinct features:
 * What is a merge conflict?
 
 A **merge conflict** is when different changes are made to the same line in the same file.  The **merge conflict** occurs because Git is trying to decide which changes to incorporate however because the changes are on the same line in the same file they are competing with one another, and Git can't decide which change to accept.
+
+*Added new words like the ones I'm currently typing*
