@@ -12,3 +12,14 @@
 .fontsize {
     font-size: .8em;
 }
+
+/*Entering pseudoselector */
+
+section.job:hover {
+    background-color: #0079C2;
+}
+
+h2.experience-category:first-letter {
+    font-size: 200%;
+}
+
