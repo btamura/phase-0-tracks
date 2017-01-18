@@ -2,8 +2,8 @@ img {
     display: block;
 }
 
-.octopus {position:absolute;
-    margin-top: 15%;
+.octopus {
+    margin-top: 10%;
     margin-left: 40%;
 
 }
@@ -11,13 +11,13 @@ img {
 .hat {
     position:absolute;
     z-index: 5;
-    top:125px;
-    right: 505px;
+    top:55px;
+    right: 510px;
 }
 
 .glasses {
     position: absolute;
     z-index:5;
-    top: 300px;
-    left: 562px;
+    top: 225px;
+    left: 555px;
 }
