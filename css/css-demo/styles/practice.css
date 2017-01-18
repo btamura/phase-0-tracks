@@ -23,3 +23,10 @@ h2.experience-category:first-letter {
     font-size: 200%;
 }
 
+/*How can you use CSS to select the child element of another element 
+(for instance, a section inside another section, or an li inside a ul but 
+not inside an ol)? Add an example of such a rule in your CSS.*/
+
+ul > li {
+    font-family: Helvetica;
+}
