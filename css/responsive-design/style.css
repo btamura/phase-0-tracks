@@ -32,19 +32,31 @@ figcaption {
 }
 
 body {
-  width: 960px;
+  max-width: 960px;
 }
 
 #external-links {
-  width: 200px;
+  width: 20%;
 }
 
 main {
-  width: 756px;
-
+  width: 20%;
 }
 
-#external-links, #side-by-side {
+#external-links, main {
   display: inline-block;
   vertical-align: top;
 }
+
+@media screen and (max-width: 500px) {
+  body {
+    background-color: hotpink;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  #external-links{
+    font-size: 20px;
+  }
+}
+
