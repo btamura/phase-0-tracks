@@ -1,0 +1,19 @@
+# Algorithm for boarding the NYC subway
+
+-Stand behind yellow paint on floor and wait on platform for subway
+-Look at exterior of the subway cars for correct train letter as they pull into the station.
+-If letter on train matches the letter of desired train:
+    -Wait for subway to come to a complete stop.
+    -While training is stopping at the platform walk up to subway door and stand to either the left or right of the doors, but stand behind the yellow paint on floor.
+    -Once subway has come to a complete stop wait for subway doors have opened, allowing passengers to exit the train.
+    -After passengers have left train car walk through subway doors onto subway car.
+    -If there are seats available:
+        -Walk up to open seat and sit down.
+        -If women, elderly, or people with physical disabilities are standing:
+            -Give up seat to them.
+        -Otherwise:
+            -Continue to stay seated.
+    -Otherwise:
+        -Stand in car and hold onto metal hand rail.
+-Otherwise:
+    -Continue waiting for matching train letter/number on the exterior of subway cars coming into the station.

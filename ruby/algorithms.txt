@@ -1,0 +1,52 @@
+write the algorithm for using an elevator. Remember, robots are not smart at all, so you'll have to spell everything out.
+
+For instance, how will your robot figure out which floor button to press?
+
+# Algorithm for robots using an elevator and wanting to go to the 8th floor
+
+-Robot determines if they need to go up or down to 8th floor.
+-If robot is above the 8th floor:
+    - Press and release "down" button
+    - Wait for elevator to arrive.
+    - Once elevator doors have opened.
+        -If there are passengers:
+            -Wait for passengers to exit.
+            -After passengers have exited, step onto elevator
+        -Otherwise:
+            -Step onto elevator.
+    - Once in elevator search for floor level button.
+    - Sort levels buttons from least to greatest.
+    - Find 8th floor button
+    - Press 8th floor button.
+    - Release 8th floor button.
+    - Wait for elevator to reach 8th floor.
+        -If elevator stops at another floor before 8th floor is reach:
+            -Move to allow other passengers to enter or leave elevator. 
+        -Otherwise:
+            - Wait for elevator to reach 8th floor.
+    - Wait for elevator doors to open for the 8th.
+    - Exit elevator onto 8th floor.
+-Otherwise:
+    - Press and release "up" button.
+    - Wait for elevator to arrive.
+    - Once elevator doors have opened.
+        -If there are passengers:
+            -Wait for passengers to exit.
+            -After passengers have exited, step onto elevator
+        -Otherwise:
+            -Step onto elevator.
+    - Once in elevator search for floor level button.
+    - Sort levels buttons from least to greatest.
+    - Find 8th floor button.
+    - Press 8th floor button.
+    - Release 8th floor button.
+        - Wait for elevator to reach 8th floor.
+        -If elevator stops at another floor before 8th floor is reach:
+            -Move to allow other passengers to enter or leave elevator. 
+        -Otherwise:
+            - Wait for elevator to reach 8th floor.
+    - Wait for elevator doors to open for the 8th.
+    - Exit elevator onto 8th floor.
+
+
+    
