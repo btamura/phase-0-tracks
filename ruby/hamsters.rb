@@ -17,11 +17,19 @@ puts "What is the hamster's estimated age?"
 input_age = gets.chomp
 
 
-if input_age == ""
-  age = nil
+#if input_age == ""
+#  age = nil
+#else
+#  age = input_age.to_i
+#end 
+
+#Lines 27-31 is testing out the .empty? attribute I learned with Grace from Andrew the Advisor
+
+if input_age.empty?
+    age = nil
 else
-  age = input_age.to_i
-end 
+    age = input_age.to_i
+end
 
 
 
