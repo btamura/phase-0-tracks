@@ -11,6 +11,8 @@ users_birth_year = 2017 - (users_age - 1)
 
 users_age = 2017 - users_birth_year
 
+#puts users_age
+
 
 puts "Our company cafeteria serves garlic bread.  Should we order some for you? y/n"
 more_garlic = gets.chomp
