@@ -42,7 +42,7 @@ if users_age == 2017 - users_birth_year && more_garlic == "y" || health_insuranc
 elsif users_age != 2017 - users_birth_year && (more_garlic == "n" || health_insurance == "n")
     puts "Probably a vampire."
 
-elsif users_age != 2017 - users_birth_year && more_garlic == "n" && health_insurance == "n"
+elsif users_age != 2017 - users_birth_year && (more_garlic == "n" && health_insurance == "n")
     puts "Almost certainly a vampire."
 
 elsif users_name == "Drake Cula" || users_name == "Tu Fang"
