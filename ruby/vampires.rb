@@ -23,7 +23,7 @@ until employees_processed <= 0
 
 loop do
   puts "What are your allergies? When finished type in \"done\" "
-  users_allergies = gets.chomp!
+  users_allergies = gets.chomp
   if users_allergies != "sunshine"
   elsif users_allergies == "sunshine"
     puts "Probably a vampire!"
@@ -39,10 +39,10 @@ end
 if users_age == 2017 - users_birth_year && more_garlic == "y" || health_insurance == "y"
     puts "Probably not a vampire."
 
-elsif users_age != 2017 - users_birth_year && (more_garlic == "n" || health_insurance == "n")
+elsif (users_age != 2017 - users_birth_year) && (more_garlic == "n" || health_insurance == "n")
     puts "Probably a vampire."
 
-elsif users_age != 2017 - users_birth_year && (more_garlic == "n" && health_insurance == "n")
+elsif (users_age != 2017 - users_birth_year) && (more_garlic == "n" && health_insurance == "n")
     puts "Almost certainly a vampire."
 
 elsif users_name == "Drake Cula" || users_name == "Tu Fang"
