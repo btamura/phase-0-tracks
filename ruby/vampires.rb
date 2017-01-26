@@ -3,7 +3,7 @@ puts "How many employees will be processed?"
 employees_processed = gets.chomp.to_i
 p employees_processed
     
-until employees_processed = 0 
+until employees_processed == 0 
 
     employees_processed -= 1
     
@@ -28,9 +28,9 @@ until employees_processed = 0
         p health_insurance
 
     loop do
-      puts "What are your allergies? When finished type in \"done\" "
-      users_allergies = gets.chomp
-
+    puts "What are your allergies? When finished type in \"done\" "
+        users_allergies = gets.chomp
+    
       if users_allergies != "sunshine"
         elsif users_allergies == "sunshine"
           puts "Probably a vampire!"
