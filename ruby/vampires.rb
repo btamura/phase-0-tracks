@@ -30,7 +30,6 @@ until employees_processed <= 0
     loop do
       puts "What are your allergies? When finished type in \"done\" "
       users_allergies = gets.chomp
-      p gets.chomp
 
       if users_allergies != "sunshine"
         elsif users_allergies == "sunshine"
