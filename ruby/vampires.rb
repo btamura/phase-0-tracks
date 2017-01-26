@@ -3,7 +3,7 @@ puts "How many employees will be processed?"
 employees_processed = gets.chomp.to_i
 p employees_processed
     
-until employees_processed <= 0 
+until employees_processed = 0 
 
     employees_processed -= 1
     
@@ -43,16 +43,16 @@ until employees_processed <= 0
 
 
 
-    if users_age == 2017 - users_birth_year && (more_garlic == "y" || health_insurance == "y")
+    if users_age + users_birth_year == 2017 && (more_garlic == "y" || health_insurance == "y")
         puts "Probably NOT a vampire."
     
-    elsif users_age != 2017 - users_birth_year && (more_garlic == "n" || health_insurance == "n")
+    elsif users_age + users_birth_year != 2017 && (more_garlic == "n" || health_insurance == "n")
         puts "Probably a vampire."
     
-    elsif users_age != 2017 - users_birth_year && (more_garlic == "n" && health_insurance == "n")
+    elsif users_age + users_birth_year != 2017 && (more_garlic == "n" && health_insurance == "n")
         puts "Almost certainly a vampire."
     
-    elsif (users_name == "Drake Cula" || users_name == "Tu Fang")
+    elsif users_name == "Drake Cula" || users_name == "Tu Fang"
         puts "Definitely a vampire."
     
     else
