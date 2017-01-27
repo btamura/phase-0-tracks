@@ -1,52 +1,49 @@
-puts "How many employees will be processed?"
+puts "How many employees will be processed? "
 
 employees_processed = gets.chomp.to_i
 print employees_processed
     
 until employees_processed == 0 
 
-    puts ""
-    print "What is your name, please?"
-        users_name = gets.chomp
-        p users_name
+  puts ""
+  print "What is your name, please? "
+    users_name = gets.chomp
+    p users_name
      
-    puts ""               
-    print "How old are you?"
-        users_age = gets.chomp.to_i
-        p users_age
+  puts ""               
+  print "How old are you? "
+    users_age = gets.chomp.to_i
+    p users_age
 
-    puts ""
-    print "What year were you born?"
-        users_birth_year = gets.chomp.to_i
-        p users_birth_year
+  puts ""
+  print "What year were you born? "
+    users_birth_year = gets.chomp.to_i
+    p users_birth_year
 
-        age_calculated = 2017 - users_birth_year
+    age_calculated = 2017 - users_birth_year
 
-    puts ""
-    print "Our company cafeteria serves garlic bread.  Should we order some for you? y/n"
-        more_garlic = gets.chomp
-        p more_garlic
+  puts ""
+  print "Our company cafeteria serves garlic bread.  Should we order some for you? y/n. "
+    more_garlic = gets.chomp
+    p more_garlic
 
-    puts ""
-    print "Would you like to enroll in the company's health insurance? y/n"
-        health_insurance = gets.chomp
-        p health_insurance
+  puts ""
+  print "Would you like to enroll in the company's health insurance? y/n. "
+    health_insurance = gets.chomp
+    p health_insurance
 
-    loop do
-        print "What are your allergies? When finished type in \"done\" "
-        
-        users_allergies = gets.chomp
+  puts "What are your allergies? Finished type \"done\". "
+  allergies = gets.chomp
     
-      if users_allergies != "sunshine"
-      elsif users_allergies == "sunshine"
-        puts "Probably a vampire!"
-        break
-      end
-      if users_allergies == "done"
-        break
+    until allergies == "done"
+    puts "What are your other allergies? Finished type \"done\". "
+    allergies = gets.chomp
+    
+      if allergies == "sunshine"
+        puts "Probably a Vampire"
+      break
       end
     end
-
 
 
     if (users_name == "Drake Cula") || (users_name == "Tu Fang")
