@@ -9,21 +9,25 @@ until employees_processed == 0
     print "What is your name, please?"
         users_name = gets.chomp
         p users_name
-                    
+     
+    puts ""               
     print "How old are you?"
         users_age = gets.chomp.to_i
         p users_age
 
+    puts ""
     print "What year were you born?"
         users_birth_year = gets.chomp.to_i
         p users_birth_year
 
         age_calculated = 2017 - users_birth_year
 
+    puts ""
     print "Our company cafeteria serves garlic bread.  Should we order some for you? y/n"
         more_garlic = gets.chomp
         p more_garlic
 
+    puts ""
     print "Would you like to enroll in the company's health insurance? y/n"
         health_insurance = gets.chomp
         p health_insurance
@@ -34,10 +38,10 @@ until employees_processed == 0
         users_allergies = gets.chomp
     
       if users_allergies != "sunshine"
-        elsif users_allergies == "sunshine"
-          puts "Probably a vampire!"
-          break
-        end
+      elsif users_allergies == "sunshine"
+        puts "Probably a vampire!"
+        break
+      end
       if users_allergies == "done"
         break
       end
