@@ -1,7 +1,7 @@
 puts "How many employees will be processed? "
 
 employees_processed = gets.chomp.to_i
-print employees_processed
+p employees_processed
     
 until employees_processed == 0 
 
@@ -20,7 +20,7 @@ until employees_processed == 0
     users_birth_year = gets.chomp.to_i
     p users_birth_year
 
-    age_calculated = 2017 - users_birth_year
+  age_calculated = 2017 - users_birth_year
 
   puts ""
   print "Our company cafeteria serves garlic bread.  Should we order some for you? y/n. "
@@ -32,20 +32,12 @@ until employees_processed == 0
     health_insurance = gets.chomp
     p health_insurance
 
+  allergies = ""
+    
+  until allergies == "done"
   puts "What are your allergies? Finished type \"done\". "
   allergies = gets.chomp
     
-    until allergies == "done"
-    puts "What are your other allergies? Finished type \"done\". "
-    allergies = gets.chomp
-    
-      if allergies == "sunshine"
-        puts "Probably a Vampire"
-      break
-      end
-    end
-
-
     if (users_name == "Drake Cula") || (users_name == "Tu Fang")
     puts "Definitely a vampire."
 
@@ -60,13 +52,20 @@ until employees_processed == 0
     
     else
     puts "Results inconclusive."
-    
     end
+
+  if allergies == "sunshine"
+    puts "Probably a Vampire"
+  break
+  end
+  end
+
+
 
     employees_processed -= 1
 #This second end is ending the until loop
 end
 
-
+puts ""
 print "Actually, never mind! What do these questions have to do with anything? Let's all be friends."
 
