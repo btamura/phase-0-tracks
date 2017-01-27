@@ -1,7 +1,7 @@
 puts "How many employees will be processed? "
 
 employees_processed = gets.chomp.to_i
-p employees_processed
+
     
 until employees_processed == 0 
 
@@ -34,30 +34,32 @@ until employees_processed == 0
 
   allergies = ""
     
-  until allergies == "done"
+  while allergies != "done"
   puts "What are your allergies? Finished type \"done\". "
   allergies = gets.chomp
-    
-    if (users_name == "Drake Cula") || (users_name == "Tu Fang")
-    puts "#{users_name} is DEFINITELY a vampire."
 
-    elsif (users_age == age_calculated) && (more_garlic == "y" || health_insurance == "y")
-    puts "#{users_name} is probably NOT a vampire."
+    if allergies == "done"
     
-    elsif (users_age != age_calculated) && (more_garlic == "n" && health_insurance == "n")
-    puts "#{users_name} almost certainly a vampire."
+      if (users_name == "Drake Cula") || (users_name == "Tu Fang")
+      puts "#{users_name} is DEFINITELY a vampire."
+
+      elsif (users_age == age_calculated) && (more_garlic == "y" || health_insurance == "y")
+      puts "#{users_name} is probably NOT a vampire."
     
-    elsif (users_age != age_calculated) && (more_garlic == "n" || health_insurance == "n")
-    puts "#{users_name} is probably a vampire."
+      elsif (users_age != age_calculated) && (more_garlic == "n" && health_insurance == "n")
+      puts "#{users_name} almost certainly a vampire."
     
-    else
-    puts "Results inconclusive."
+      elsif (users_age != age_calculated) && (more_garlic == "n" || health_insurance == "n")
+      puts "#{users_name} is probably a vampire."
+    
+      else
+      puts "Results inconclusive."
+      end
+
+    elsif allergies == "sunshine"
+    puts "#{users_name} is probably a Vampire"
+    break
     end
-
-  if allergies == "sunshine"
-    puts "Probably a Vampire"
-  break
-  end
   end
 
 
