@@ -39,16 +39,16 @@ until employees_processed == 0
   allergies = gets.chomp
     
     if (users_name == "Drake Cula") || (users_name == "Tu Fang")
-    puts "Definitely a vampire."
+    puts "#{users_name} is DEFINITELY a vampire."
 
     elsif (users_age == age_calculated) && (more_garlic == "y" || health_insurance == "y")
-    puts "Probably NOT a vampire."
+    puts "#{users_name} is probably NOT a vampire."
     
     elsif (users_age != age_calculated) && (more_garlic == "n" && health_insurance == "n")
-    puts "Almost certainly a vampire."
+    puts "#{users_name} almost certainly a vampire."
     
     elsif (users_age != age_calculated) && (more_garlic == "n" || health_insurance == "n")
-    puts "Probably a vampire."
+    puts "#{users_name} is probably a vampire."
     
     else
     puts "Results inconclusive."
@@ -63,6 +63,8 @@ until employees_processed == 0
 
 
     employees_processed -= 1
+
+
 #This second end is ending the until loop
 end
 
