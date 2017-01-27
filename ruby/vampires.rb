@@ -1,7 +1,7 @@
 puts "How many employees will be processed? "
 
 employees_processed = gets.chomp.to_i
-print employees_processed
+
     
 until employees_processed == 0 
 
@@ -20,7 +20,7 @@ until employees_processed == 0
     users_birth_year = gets.chomp.to_i
     p users_birth_year
 
-    age_calculated = 2017 - users_birth_year
+  age_calculated = 2017 - users_birth_year
 
   puts ""
   print "Our company cafeteria serves garlic bread.  Should we order some for you? y/n. "
@@ -32,41 +32,44 @@ until employees_processed == 0
     health_insurance = gets.chomp
     p health_insurance
 
+  allergies = ""
+    
+  while allergies != "done"
   puts "What are your allergies? Finished type \"done\". "
   allergies = gets.chomp
+
+    if allergies == "done"
     
-    until allergies == "done"
-    puts "What are your other allergies? Finished type \"done\". "
-    allergies = gets.chomp
+      if (users_name == "Drake Cula") || (users_name == "Tu Fang")
+      puts "#{users_name} is DEFINITELY a vampire."
+
+      elsif (users_age == age_calculated) && (more_garlic == "y" || health_insurance == "y")
+      puts "#{users_name} is probably NOT a vampire."
     
-      if allergies == "sunshine"
-        puts "Probably a Vampire"
-      break
+      elsif (users_age != age_calculated) && (more_garlic == "n" && health_insurance == "n")
+      puts "#{users_name} almost certainly a vampire."
+    
+      elsif (users_age != age_calculated) && (more_garlic == "n" || health_insurance == "n")
+      puts "#{users_name} is probably a vampire."
+    
+      else
+      puts "Results inconclusive."
       end
+
+    elsif allergies == "sunshine"
+    puts "#{users_name} is probably a Vampire"
+    break
     end
+  end
 
 
-    if (users_name == "Drake Cula") || (users_name == "Tu Fang")
-    puts "Definitely a vampire."
-
-    elsif (users_age == age_calculated) && (more_garlic == "y" || health_insurance == "y")
-    puts "Probably NOT a vampire."
-    
-    elsif (users_age != age_calculated) && (more_garlic == "n" && health_insurance == "n")
-    puts "Almost certainly a vampire."
-    
-    elsif (users_age != age_calculated) && (more_garlic == "n" || health_insurance == "n")
-    puts "Probably a vampire."
-    
-    else
-    puts "Results inconclusive."
-    
-    end
 
     employees_processed -= 1
+
+
 #This second end is ending the until loop
 end
 
-
+puts ""
 print "Actually, never mind! What do these questions have to do with anything? Let's all be friends."
 
